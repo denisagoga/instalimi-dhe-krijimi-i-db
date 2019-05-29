@@ -1,0 +1,41 @@
+# krijimi i databazes
+  
+  yum install mariadb
+  mysql -u root
+  yum install msqld
+  yum install MariaDB-server MariaDB-client -y
+  systemctl start mariadb
+  systemctl enable mariadb
+  systemctl status mariadb
+  mysql_secure_installation
+  mysql -u root
+  
+# krijimi i db
+
+create database 'group3';
+use 'group3';
+
+CREATE TABLE AMDSHPK(
+   PersonID int,
+   LastName varchar(255)
+   FirstName varchar(255),
+   Address varchar(255),
+   City varchar(255));
+   
+ INSERT INTO AMDSHPK(
+   PersonID,
+   LastName,
+   FirstName ,
+   Address ,
+   City)
+   
+ VALUES(
+ '1',
+'GOGA',
+'DENISA',
+'TIRANE',
+'TIRANE');
+
+# query
+SELECT FirstName
+FROM AMDSHPK;
