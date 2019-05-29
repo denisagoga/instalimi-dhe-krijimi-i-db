@@ -1,4 +1,4 @@
-# krijimi i databazes
+# instalimi i databazes
   
   yum install mariadb
   mysql -u root
